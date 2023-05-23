@@ -117,9 +117,9 @@ def train_val_test_split(edge_index, split_strategy='temporal'):
         val_edge_index = np.concatenate((val_edge_index,user_edges[:,-2].reshape(-1,1)),axis=1).astype(int)
         train_edge_index = np.concatenate((train_edge_index,user_edges[:,:-2]),axis=1).astype(int)
 
-    train_edge_index = torch.tensor(train_edge_index)
-    test_edge_index = torch.tensor(test_edge_index)
-    val_edge_index = torch.tensor(val_edge_index)
+    train_edge_index = torch.tensor(train_edge_index).to(torch.long)
+    test_edge_index = torch.tensor(test_edge_index).to(torch.long)
+    val_edge_index = torch.tensor(val_edge_index).to(torch.long)
 
 
   return train_edge_index, val_edge_index, test_edge_index
