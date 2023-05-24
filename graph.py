@@ -1,3 +1,8 @@
+"""
+This code was written with the help of PyG tutorials, mainly:
+https://pytorch-geometric.readthedocs.io/en/latest/tutorial/load_csv.html
+"""
+
 import torch
 from sklearn.model_selection import train_test_split
 import numpy as np

@@ -1,3 +1,9 @@
+"""
+Source of code: https://colab.research.google.com/drive/1KKugoFyUdydYC0XRyddcROzfQdMwDcnO?usp=sharing
+That code was adapted to our purposes, e.g. reporting a wider range of @K.
+
+"""
+
 import torch
 from torch import Tensor
 import random
