@@ -14,7 +14,7 @@ To use other CUDA versions, consult the documentation for PyTorch and PyTorch Ge
     pip3 install pandas
     pip3 install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.0.0+cu117.html
    ```
-2. Unpack data/subsamples.zip into data/
+2. Unpack `data/subsamples.zip` into `data/`
 3. Learn How to use ngcf_final.py
    ```
    $ python ngcf_final.py --help
